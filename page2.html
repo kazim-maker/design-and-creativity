@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists: Ordered and Unordered</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #2E6DA4;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 4px 4px 0 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 30px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .lists-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .list-section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .list-section p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 13px;
+            color: #2E6DA4;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        .preview-label {
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 20px 0 10px 0;
+        }
+        .preview {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .preview ol {
+            margin-left: 20px;
+        }
+        .preview ul {
+            margin-left: 20px;
+        }
+        .preview li {
+            margin-bottom: 5px;
+        }
+        .summary-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .summary-section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .summary-section p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .button-container {
+            text-align: right;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2E6DA4;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1f4a70;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            HTML Lists: Ordered and Unordered
+        </div>
+        <div class="content">
+            <p class="subtitle">Understand the differences between ordered and unordered lists in HTML.</p>
+
+            <div class="lists-container">
+                <div class="list-section">
+                    <h3>Ordered Lists</h3>
+                    <p>Ordered lists display items in a specific sequence:</p>
+                    
+                    <div class="code-block">
+&lt;ol&gt;<br>
+&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
+&lt;/ol&gt;
+                    </div>
+
+                    <div class="preview-label">Preview:</div>
+                    <div class="preview">
+                        <ol>
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="list-section">
+                    <h3>Unordered Lists</h3>
+                    <p>Unordered lists display items with bullet points:</p>
+                    
+                    <div class="code-block">
+&lt;ul&gt;<br>
+&nbsp;&lt;li&gt;Apple&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Banana&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;Cherry&lt;/li&gt;<br>
+&lt;/ul&gt;
+                    </div>
+
+                    <div class="preview-label">Preview:</div>
+                    <div class="preview">
+                        <ul>
+                            <li>Apple</li>
+                            <li>Banana</li>
+                            <li>Cherry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-section">
+                <h3>Summary</h3>
+                <p>Ordered lists are numbered. Unordered lists use bullet points.</p>
+            </div>
+
+            <div class="button-container">
+                <a href="page1.html" class="back-btn">← Back to HTML Basics</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
